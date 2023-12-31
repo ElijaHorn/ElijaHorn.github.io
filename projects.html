@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elija's Portfolio - Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Added a background color for better visibility */
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        nav a:first-child {
+            font-weight: bold;
+        }
+
+        nav div {
+            display: flex;
+        }
+
+        nav a:not(:last-child) {
+            border-right: 1px solid white;
+        }
+
+        .projects-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .project {
+            width: 30%; /* Adjust as needed */
+            margin-bottom: 20px;
+            position: relative;
+            overflow: hidden;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            color: black; /* Set text color to black */
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+        }
+
+        .project img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .project-content {
+            padding: 20px;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            box-sizing: border-box;
+            background-color: rgba(255, 255, 255, 0.9);
+            max-height: 100%;
+            overflow-y: auto;
+        }
+
+        .project:hover .project-content {
+            opacity: 1;
+        }
+
+        .project-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+            text-align: center; /* Center the title */
+        }
+
+        .project-description {
+            font-size: 16px;
+        }
+
+        hr {
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Elija's Portfolio</a>
+        <div>
+            <a href="updates.html">Updates</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <div class="projects-container">
+        <!-- Project 1 -->
+        <a href="testproject.html" class="project">
+            <img src="https://th.bing.com/th?id=OSK.XrvWKo0V7ZEWPwJXoF7aswHaE7&w=130&h=100&c=8&o=6&pid=SANGAM" alt="Project 1">
+            <div class="project-title">Test Project</div>
+            <div class="project-content">
+                <div class="project-title">Test Project</div>
+                <div class="project-description">Hey, look at that, the first project on the project page!  In the future, this page will be filled with all my projects.  All projects will have a title, description, and cover image, just like this one.  When you click a project, it'll bring you to the project page.</div>
+            </div>
+        </a>
+
+        <!-- Repeat similar structure for more projects -->
+        
+    </div>
+
+    <!-- Horizontal Divider -->
+    <hr>
+
+</body>
+</html>
