@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elija's Portfolio - Updates</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Added a background color for better visibility */
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        nav a:first-child {
+            font-weight: bold;
+        }
+
+        nav div {
+            display: flex;
+        }
+
+        nav a:not(:last-child) {
+            border-right: 1px solid white;
+        }
+
+        .updates-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            overflow: auto; /* Added to allow scrolling */
+            display: flex;
+        }
+
+        .articles-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column; /* Stack articles vertically */
+        }
+
+        .update-content {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            margin-bottom: 20px; /* Increased spacing between articles */
+        }
+
+        .update-title {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .update-date {
+            font-size: 12px;
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+        .update-text {
+            font-size: 16px;
+        }
+
+        .table-of-contents {
+            flex-basis: 30%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-left: 20px; /* Added left margin to separate from articles */
+            position: sticky;
+            top: 70px; /* Adjust as needed */
+        }
+
+        .toc-heading {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .toc-link {
+            display: block;
+            margin-bottom: 8px;
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        hr {
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Elija's Portfolio</a>
+        <div>
+            <a href="updates.html">Updates</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <div class="updates-container">
+        <div class="articles-container">
+            <!-- Second Article -->
+            <div class="update-content" id="update2">
+                <div class="update-title">The Updates Page</div>
+                <div class="update-date">December 30th, 2023</div>
+                <div class="update-text">
+                    <p>Welcome to the updates page of my portfolio.  Here, I will provide updates on projects I am working on.  Currently, my project is this website, so let me show you what I've gotten done here.</p>
+                    <p>First, we need to talk about the navigation bar up top, one of the most simple yet most important parts of the website.  By clicking my name, you can see the homepage.  And if you've found this page, then I'm assuming you can figure out how the rest of the buttons work.  On this page, I can create as many articles as I want.  I spent hours arguing with ChatGPT to get the correct design fo this page, so take a little time to apreciate it.  To the right, there is a very nice table of contents created for your ease.  To use it, simple click on any article you want to review, and a javascript function will take you on down there.  Go ahead, try it out.</p>
+                </div>
+            </div>
+
+            <!-- First Article -->
+            <div class="update-content" id="update1">
+                <div class="update-title">My Portfolio</div>
+                <div class="update-date">December 30th, 2023</div>
+                <div class="update-text">
+                    <p>I use an html online editor to see live changes to my page, and let me tell you, it is looking so good right now.  Better than anything I even thought of.  Hopefully I can continue to surpass my own expectations in future projects.  This is my first time seriously using html, and I can't take all the credit.  I used ChatGPT to create most of this.  Turns out, you just have to tell the little robot what you want and he'll create it for you.  AI is definatly going to have a huge impact on coding.</p>
+                    <p>Anyway, I created this portfolio to help me keep up and stay motivated through projects.  I promise to post all my finalized projects in the projects tab, and keep you all up to date on anything I'm working on here in updates.  While the homepage may look bland now, I assure you I'll lighten it up once I get a project done.  By the way, most of my projects will be games that you can play in the browser, and if your school doesn't block this website, thank me later.</p>
+                    <!-- Add more content for the first article as needed -->
+                </div>
+            </div>
+
+            <!-- Add more articles as needed -->
+        </div>
+
+        <div class="table-of-contents">
+            <div class="toc-heading">Table of Contents</div>
+            <a class="toc-link" onclick="scrollToArticle('update2')">The Updates Page</a>
+            <a class="toc-link" onclick="scrollToArticle('update1')">My Portfolio</a>
+            <!-- Add more links for other updates as needed -->
+        </div>
+    </div>
+
+    <!-- Horizontal Divider -->
+    <hr>
+
+    <script>
+        function scrollToArticle(articleId) {
+            const articleElement = document.getElementById(articleId);
+            if (articleElement) {
+                articleElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+
+</body>
+</html>
