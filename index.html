@@ -1,7 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elija's Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Added a background color for better visibility */
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        nav a:first-child {
+            font-weight: bold;
+        }
+
+        nav div {
+            display: flex;
+        }
+
+        nav a:not(:last-child) {
+            border-right: 1px solid white;
+        }
+
+        .homepage-content {
+            text-align: center;
+            margin: 50px auto;
+            max-width: 600px;
+            background-color: #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            font-family: 'Impact', sans-serif; /* Added font-family */
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+    <nav>
+        <a href="home.html">Elija's Portfolio</a>
+        <div>
+            <a href="updates.html">Updates</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <div class="homepage-content">
+        <p>I haven't finished any projects yet. Check my updates to see when the next one comes to this website.</p>
+    </div>
+
 </body>
 </html>
